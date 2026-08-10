@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería Fotográfica Interactiva</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="addTabIndex()">
+    <header>
+      <h1>Mi Galería Fotográfica</h1>
+      <p>Galería interactiva con soporte para mouse y teclado.</p>
+    </header>
+
+    <main>
+      <div class="gallery">
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+          alt="Paisaje de montaña junto a un lago"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo(this)"
+          onfocus="upDate(this)"
+          onblur="unDo(this)"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+          alt="Montañas nevadas durante el atardecer"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo(this)"
+          onfocus="upDate(this)"
+          onblur="unDo(this)"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+          alt="Camino rodeado de árboles"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo(this)"
+          onfocus="upDate(this)"
+          onblur="unDo(this)"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+          alt="Playa con agua azul y arena"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo(this)"
+          onfocus="upDate(this)"
+          onblur="unDo(this)"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+          alt="Casa ubicada frente a un lago y montañas"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo(this)"
+          onfocus="upDate(this)"
+          onblur="unDo(this)"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+          alt="Paisaje montañoso con cielo despejado"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo(this)"
+          onfocus="upDate(this)"
+          onblur="unDo(this)"
+        />
+      </div>
+
+      <div id="display">
+        Pase el mouse sobre una imagen o selecciónela con el teclado.
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
