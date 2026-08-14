@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProductList from "./components/ProductList.jsx";
 import CartItem from "./components/CartItem.jsx";
+import AboutUs from "./components/AboutUs.jsx";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
